@@ -1,15 +1,15 @@
-# Base
+# develop
+
+### Constract
+
+
+#### For git
+$ git init
+$ git add README.md
+$ git commit -m "First Commit"
+$ git remote add origin git@github:*****/****.git
+$ git push -u origin master
+
 
 ### composer のダウンロード
 $ curl -sS https://getcomposer.org/installer | php
-
-
-git init
-
-
-echo "# develop" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:YojiTsukada/develop.git
-git push -u origin master
