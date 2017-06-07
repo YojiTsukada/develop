@@ -72,3 +72,8 @@ $ curl -sS https://getcomposer.org/installer | php
 
 ### Project の作成
 $ laravel new dev01
+
+
+
+### Controller  の作成
+[root@2d72f776a1b6 dev01]# php artisan make:controller UserController
