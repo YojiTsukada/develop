@@ -1,0 +1,19 @@
+@startuml
+
+activate user
+user -> search : 住所を検索
+
+activate search
+search -> Google : API を　発行
+
+activate Google
+Google -> DB : データの検索
+
+activate DB
+DB --> Google
+
+Google --> search
+
+search --> user
+
+@enduml

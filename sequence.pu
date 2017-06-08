@@ -1,0 +1,27 @@
+@startuml
+
+activate user
+user -> login : ログインする
+
+activate login
+login -> ユーザ情報 : ユーザ情報検索
+
+activate ユーザ情報
+ユーザ情報 --> login
+deactivate ユーザ情報
+
+login --> user
+
+alt 認証
+login --> user : Redirect to Search
+else 認証失敗
+login --> user : Redirect to Error
+end
+
+opt 認証失敗
+  login -> email
+end
+
+deactivate login
+
+@enduml

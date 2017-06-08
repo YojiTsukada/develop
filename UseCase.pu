@@ -1,0 +1,23 @@
+@startuml
+
+actor user
+actor Google
+
+left to right direction
+
+rectangle web{
+user -right-> (ログインする)
+user -right-> (住所検索する)
+user -right-> (住所を保存する)
+Google -left-> (住所を教える)
+}
+
+
+rectangle API{
+Google -left-> (住所を検索)
+}
+
+@enduml
+
+
+
